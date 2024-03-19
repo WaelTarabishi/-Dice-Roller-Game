@@ -1,0 +1,148 @@
+:root {
+  --gradient-text: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000000;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Vercel";
+  src: url("fonts/Geist-Bold-BF6569491da5a14.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  background: linear-gradient(45deg, #fd1d1d, #fcb045);
+  background-clip: text;
+  color: transparent;
+  font-family: Vercel;
+  font-weight: bold;
+}
+form {
+  text-align: center;
+  padding: 25px;
+  border: solid;
+  border-width: 0.5px;
+  border-color: #6b6b6b;
+  max-width: 500px;
+  margin: auto;
+  background-color: #0a0a0a;
+}
+form:hover {
+  text-align: center;
+  padding: 25px;
+  border: solid;
+  border-width: 0.5px;
+  border-color: #6b6b6b;
+  max-width: 500px;
+  margin: auto;
+  background-color: #0a0a0a;
+}
+
+label {
+  font-size: 1.5em;
+  font-weight: bold;
+  background: linear-gradient(45deg, #833ab4, #fd1d1d);
+  background-clip: text;
+  color: transparent;
+}
+button {
+  background-color: black;
+  color: white;
+  font-size: 1.5em;
+  border: solid;
+  border-width: 0.5px;
+  border-color: #6b6b6b;
+  cursor: pointer;
+  padding: 8px;
+  letter-spacing: 1px;
+}
+button:hover {
+  background-color: #1a1a1a;
+  color: white;
+  font-size: 1.5em;
+  border: solid;
+  border-width: 0.5px;
+  border-color: #6b6b6b;
+  cursor: pointer;
+  padding: 8px;
+  letter-spacing: 1px;
+}
+#result {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+#numOfDice {
+  text-align: center;
+  font-size: 2em;
+  border: 1px solid #6b6b6b;
+  margin-bottom: 8px;
+  background-color: #000000;
+  color: white;
+  width: 70px;
+}
+/* Hide the default radio button */
+input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px; /* Adjust the size of the custom radio button */
+  height: 20px; /* Adjust the size of the custom radio button */
+  border-radius: 50%; /* Make it a circle */
+  border: 2px solid #6b6b6b; /* Border color */
+  outline: none;
+  position: relative;
+}
+/* Style the custom radio button when checked */
+input[type="radio"]:checked::before {
+  content: "";
+  display: block;
+  width: 12px; /* Size of the inner circle */
+  height: 12px; /* Size of the inner circle */
+  border-radius: 50%; /* Shape it into a circle */
+  background: white; /* Color of the inner circle when checked */
+  position: absolute;
+  top: 2.5px; /* Adjust the position of the inner circle */
+  left: 2.4px; /* Adjust the position of the inner circle */
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  margin: -3px;
+}
+#diceImages img {
+  width: 150px;
+  margin: 5px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 500px;
+  background-color: #1a1a1a;
+  padding: 12px;
+  border: solid;
+  border-width: 0.5px;
+  border-color: #6b6b6b;
+}
+
+.containerjs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 500px;
+  border: solid;
+  border-width: 0.5px;
+  border-color: #6b6b6b;
+  padding: 24px;
+}
